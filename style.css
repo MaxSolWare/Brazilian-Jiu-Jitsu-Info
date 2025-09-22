@@ -1,0 +1,686 @@
+/*Body en style*/
+body {
+        margin: 0;
+        padding: 20px;
+        font-family: 'Poppins', sans-serif;
+        line-height: 1.6;
+        background-color: #000;
+        color: #939393;
+}
+
+
+
+/*intro tekst*/
+.intro {
+        text-align: center;
+        color: #fff;
+        max-width: 800px;
+        margin: 40px auto;
+        font-size: 1.2rem;
+        line-height: 1.6;
+}
+
+
+
+/*Nav*/
+nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        background-color: #000;
+        padding: 15px 20px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+}
+
+nav img {
+        height: 40px;
+        margin-right: 20px;
+}
+
+nav a {
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
+        letter-spacing: 0.5px;
+        text-decoration: none;
+        transition: color 0.2s;
+}
+
+nav a:hover {
+        color: rgb(255, 255, 255);
+}
+
+
+
+/*header homepage*/
+.hero {
+        background: url('bjj.jpeg') center/cover no-repeat;
+        height: 50vh;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+}
+
+.hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.55);
+}
+
+.hero-content {
+        position: relative;
+        z-index: 1;
+}
+
+.hero h1 {
+        font-size: 4rem;
+        font-weight: 800;
+        margin-bottom: 20px;
+}
+
+.hero p {
+        font-size: 1.3rem;
+        margin-bottom: 30px;
+}
+
+
+
+/*sections*/
+section {
+        padding: 60px 20px;
+}
+
+section:nth-child(even) {
+        background: #111;
+}
+
+
+
+/*header*/
+h1 {
+        font-size: 3rem;
+        font-weight: 700;
+}
+
+h2,
+h3 {
+        font-weight: 600;
+}
+
+
+
+/*paragraaf*/
+p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+}
+
+.frontpage-text {
+        color: #fff;
+}
+
+
+
+/*buttons kleur groote*/
+.btn,
+.btn-small {
+        background-color: #f00;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: background 0.2s;
+}
+
+.btn:hover,
+.btn-small:hover {
+        background-color: rgb(255, 255, 255);
+}
+
+
+
+/*footer*/
+footer {
+        background: #000;
+        color: #bbb;
+        text-align: center;
+        padding: 30px;
+        font-size: 0.9rem;
+}
+
+footer p {
+        margin: 0;
+}
+
+footer {
+        background: #111;
+        border-top: 3px solid #f00;
+}
+
+
+/*History page*/
+.timeline {
+        position: relative;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px 0;
+        position: relative;
+}
+
+.timeline::before,
+.timeline::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        background: #ddd;
+        left: 50%;
+        transform: translateX(-50%);
+}
+
+.timeline-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 60px;
+        position: relative;
+        width: 50%;
+        padding: 20px 30px;
+        box-sizing: border-box;
+}
+
+.timeline-item:nth-child(odd) {
+        left: 0;
+        text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+        left: 50%;
+        text-align: left;
+}
+
+.timeline-content {
+        background: #111;
+        color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        width: 70%;
+        position: relative;
+}
+
+.timeline-content:hover {
+        transform: scale(1.02);
+        transition: all 0.3s ease;
+}
+
+.timeline-content h3 {
+        margin-top: 0;
+        color: #fff;
+}
+
+.timeline-content p {
+        color: #fff;
+}
+
+.timeline-img {
+        width: 150px;
+        height: 200px;
+        flex-shrink: 0;
+        overflow: hidden;
+        border-radius: 10px;
+}
+
+.timeline-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+}
+
+.timeline-img.left {
+        margin-right: 3%;
+}
+
+.timeline-img.right {
+        order: 1;
+        margin-left: 3px;
+}
+
+
+
+/*submissions page*/
+.submission-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+}
+
+.submission-card {
+        background: linear-gradient(145deg, #111 0%, #1a1a1a 100%);
+        color: #fff;
+        border-radius: 12px;
+        padding: 20px;
+        margin: 20px auto;
+        width: 90%;
+        max-width: 900px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.submission-card:hover {
+        transform: translateY(-5px);
+}
+
+.submission-card h2 {
+        margin-top: 0;
+        margin-bottom: 15px;
+}
+
+.submission-content {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
+}
+
+.submission-text {
+        flex: 1;
+}
+
+.submission-video iframe {
+        border-radius: 8px;
+}
+
+
+
+/*Practitioners page*/
+body.practitioners .practitioner-full {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        padding: 40px 20px;
+}
+
+body.practitioners .practitioner-detail {
+        background: #111;
+        color: #fff;
+        border-radius: 12px;
+        padding: 20px;
+        text-align: center;
+        width: 300px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        transition: transform 0.2s, box-shadow 0.2s;
+}
+
+body.practitioners .practitioner-detail:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+body.practitioners .practitioner-detail img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 12px;
+        margin-bottom: 15px;
+}
+
+
+
+/*preview kaarten homepage*/
+.features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        padding: 60px 20px;
+        text-align: center;
+}
+
+.feature {
+        background: #111;
+        border-radius: 12px;
+        padding: 30px;
+        color: #fff;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/*preview kaarten rode lijn*/
+.feature,
+.submission-card,
+.practitioner-detail {
+        border: 2px solid transparent;
+        transition: border 0.3s ease;
+}
+
+.feature:hover,
+.submission-card:hover,
+.practitioner-detail:hover {
+        border: 2px solid #f00;
+}
+
+
+
+/*videos*/
+.media {
+        padding: 60px 20px;
+        text-align: center;
+}
+
+.video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        max-width: 80%;
+        margin: 0 auto;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80%;
+        border: none;
+}
+
+
+
+/* Practitioner videos*/
+.practitioner-videos {
+        padding: 50px 20px;
+        text-align: center;
+}
+
+.practitioner-videos h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+        color: #fff;
+}
+
+.video-grid {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+}
+
+.video-card {
+        flex: 1 1 300px;
+        max-width: 400px;
+}
+
+.video-card iframe {
+        width: 100%;
+        height: 225px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/*practitioners preview*/
+.practitioner-grid {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+}
+
+.practitioner-card {
+        background: #111;
+        border-radius: 12px;
+        padding: 25px;
+        width: 280px;
+        text-align: center;
+        color: #fff;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.practitioner-card img {
+        width: 100%;
+        border-radius: 8px;
+        height: auto;
+}
+
+.practitioner-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
+.practitioner-card .btn-small {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #f00;
+        color: #fff;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: background 0.2s;
+}
+
+.practitioner-card .btn-small:hover {
+        background-color: #ff5555;
+}
+
+.practitioners-preview {
+        text-align: center;
+        padding: 60px 20px;
+        color: #fff;
+}
+
+.practitioner-grid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 30px;
+}
+
+
+
+/*telefoon*/
+@media (max-width: 1024px) {
+        body {
+                padding: 10px;
+                font-size: 1rem;
+        }
+
+        section {
+                padding: 40px 10px;
+        }
+
+        h1 {
+                font-size: 2.5rem;
+        }
+
+        h2 {
+                font-size: 1.8rem
+        }
+
+        h3 {
+                font-size: 1.4rem;
+        }
+
+        p {
+                font-size: 1rem;
+                line-height: 1.5;
+        }
+
+        .btn,
+        .btn-small {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+        }
+}
+
+/*home*/
+@media (max-width: 768px) {
+        .hero {
+                height: 35vh;
+        }
+
+        .hero h1 {
+                font-size: 2rem;
+        }
+
+        .hero p {
+                font-size: 1rem;
+        }
+
+        .features {
+                grid-template-columns: 1fr;
+        }
+
+        .practitioner-grid {
+                flex-direction: column;
+                gap: 20px;
+        }
+
+        .video-container {
+                max-width: 100%;
+                height: auto;
+        }
+}
+
+/*what is bjj*/
+@media (max-width: 768px) {
+        .features {
+                grid-template-columns: 1fr;
+                padding: 20px 10px;
+        }
+
+        .video-container {
+                max-width: 100%;
+                height: auto;
+        }
+
+        .intro {
+                padding: 10px 5px;
+                font-size: 1rem;
+        }
+}
+
+/*tijdlijn*/
+@media (max-width: 768px) {
+        .timeline {
+                max-width: 100%;
+                padding: 20px 10px;
+        }
+
+        .timeline-item {
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                left: 0 !important;
+                margin-bottom: 40px;
+        }
+
+        .timeline-img {
+                width: 90%;
+                height: auto;
+                margin: 0 0 15px 0;
+        }
+
+        .timeline-img img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+        }
+
+        .timeline-content {
+                width: 95%;
+                padding: 15px;
+                border-radius: 10px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .timeline::after,
+        .timeline-item::before {
+                display: none;
+        }
+}
+
+/*submissions*/
+@media (max-width: 768px) {
+        .submission-content {
+                flex-direction: column;
+        }
+
+        .submission-video iframe {
+                width: 100%;
+                height: 200px;
+        }
+
+        .submission-card {
+                width: 95%;
+        }
+}
+
+/*practitioners*/
+@media (max-width: 768px) {
+        .practitioner-full {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                padding: 20px 10px;
+        }
+
+        .practitioner-detail {
+                width: 90%;
+        }
+
+        .video-grid {
+                flex-direction: column;
+                gap: 20px;
+        }
+
+        .video-card iframe {
+                height: 200px;
+        }
+}
+
+/*NAV*/
+@media (max-width: 768px) {
+        nav {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0;
+                background: #111;
+                position: relative;
+        }
+
+        nav a {
+                display: block;
+                width: 100%;
+                padding: 15px 20px;
+                border-bottom: 1px solid #222;
+        }
+
+        nav a:first-child {
+                border-top: 1px solid #222;
+        }
+}
